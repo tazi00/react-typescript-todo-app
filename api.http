@@ -1,0 +1,30 @@
+#Get all books
+GET http://localhost:3001/todos HTTP/1.1
+Content-Type: application/json
+
+###
+#Post all books
+
+POST http://localhost:3001/todos HTTP/1.1
+Content-Type: application/json
+
+ {
+    "todo":"excersice",
+    "desc":"need to do excersice work"
+ }
+
+###
+#update all books
+
+PUT http://localhost:3001/todos/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "todo":"excercise",
+  "desc":"need to do excercise"
+}
+###
+
+DELETE  http://localhost:3001/todos/2 HTTP/1.1
+Content-Type: application/json
+
